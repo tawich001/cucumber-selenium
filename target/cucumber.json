@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-30T02:49:01.726Z",
+        "line": 4,
+        "name": "Log in Facebook",
+        "description": "",
+        "id": "log-in-facebook;log-in-facebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5728402500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open home page",
+            "match": {
+              "location": "stepDefinations.MyStepDefinations.open_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User input \"email\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.MyStepDefinations.user_input_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User cannot login",
+            "match": {
+              "location": "stepDefinations.MyStepDefinations.user_cannot_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      }
+    ],
+    "name": "Log in Facebook",
+    "description": "",
+    "id": "log-in-facebook",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/test.feature",
+    "tags": []
+  }
+]
